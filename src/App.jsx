@@ -7,11 +7,11 @@ import Navbar from './components/Navbar'
 function App() {
   return (
     <>
-      <Navbar />
       <BrowserRouter>
+        <Navbar />
         <Routes>
-          <Route path='/' element={<User />}></Route>
-          <Route path='/register' element={<Register />}></Route>
+          <Route path='/' element={<User />} />
+          <Route path='/register' element={<Register />} />
         </Routes>
       </BrowserRouter>
     </>
