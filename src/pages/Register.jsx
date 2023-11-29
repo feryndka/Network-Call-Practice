@@ -23,7 +23,7 @@ export default function Register() {
                 .matches(/[a-z]/g, "Should contain at least 1 lowercase")
                 .matches(/[A-Z]/g, "Should contain at least 1 uppercase")
                 .matches(/[0-9]/g, "Should contain at least 1 number")
-                .matches(/[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]/, "Should contain at least 1 symbol")
+                .matches(/[!@#$%^&*()_+{}[\]:;<>,.?~\\/-]/g, "Should contain at least 1 symbol")
         }),
         onSubmit:(values) => {
             axios.post("http://localhost:3000/users", {
