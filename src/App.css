@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  background-color: #008081;
+  color: white;
+  height: 65px;
+  align-items: center;
+}
+
+nav div {
+  margin-left: 20%;
+  color: black;
+  font-size: 25px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-left: 5%;
+  width: 10%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.card {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card table {
+  height: auto;
+  background-color: white;
+  width: 50%;
+}
+
+tbody:nth-child(even) {
+  background-color: #b2f6eb;
+}
+
+.card table thead tr td, tbody tr td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
