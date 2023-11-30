@@ -1,7 +1,7 @@
 import './App.css'
 import { Routes, Route, BrowserRouter } from "react-router-dom"
-import User from "./pages/User"
-import Register from "./pages/Register"
+import User from "./pages/user"
+import Register from "./pages/register"
 import Navbar from './components/Navbar'
 
 function App() {
