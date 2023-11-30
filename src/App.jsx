@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<User />} />
+          <Route path='/user' element={<User />} />
           <Route path='/register' element={<Register />} />
         </Routes>
       </BrowserRouter>

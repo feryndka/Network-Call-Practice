@@ -3,7 +3,7 @@ export default function Navbar() {
         <nav>
             <div>Network Call Practice</div>
             <ul>
-                <li><a href="/">Users</a></li>
+                <li><a href="/user">Users</a></li>
                 <li><a href="/register">Register</a></li>
             </ul>
         </nav>
