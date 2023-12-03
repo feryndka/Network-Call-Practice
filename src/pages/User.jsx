@@ -15,29 +15,27 @@ export default function User() {
   }, []);
 
   return (
-    <>
-      <div className="card">
-        <table>
-          <thead>
-            <tr>
-              <td>NAME</td>
-              <td>EMAIL</td>
-              <td>PASSWORD</td>
-            </tr>
-          </thead>
-          {user.map((item, index) => {
-            return (
-              <tbody key={index} className="item">
-                <tr>
-                  <td>{item.name}</td>
-                  <td>{item.email}</td>
-                  <td>{item.password}</td>
-                </tr>
-              </tbody>
-            );
-          })}
-        </table>
-      </div>
-    </>
+    <div className="card">
+      <table>
+        <thead>
+          <tr>
+            <td>NAME</td>
+            <td>EMAIL</td>
+            <td>PASSWORD</td>
+          </tr>
+        </thead>
+        {user.map((item, index) => {
+          return (
+            <tbody key={index} className="item">
+              <tr>
+                <td>{item.name}</td>
+                <td>{item.email}</td>
+                <td>{item.password}</td>
+              </tr>
+            </tbody>
+          );
+        })}
+      </table>
+    </div>
   );
 }
